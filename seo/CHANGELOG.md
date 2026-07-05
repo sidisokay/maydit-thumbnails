@@ -42,6 +42,11 @@ The Framer MCP cannot edit CMS collection templates, so this one placement is ma
 - `seo/SEO-AUDIT-2026-07.md`, `seo/recommended-metadata.md`,
   `seo/StructuredDataHome.tsx`, `seo/StructuredDataArticle.tsx`.
 
+### Prepared, not yet applied (Framer went read-only mid-session)
+- **Internal linking** to form the topic cluster (pillar + supporting). Ready-to-paste
+  blocks are in `seo/internal-linking-plan.md`. Re-enable edit access in Framer (open the
+  project as editor with the MCP plugin running) and I can apply these automatically.
+
 ## Still owner-only (highest remaining impact)
 1. **Publish** the Framer project so all of the above goes live.
 2. Apply **meta titles/descriptions** from `seo/recommended-metadata.md` (can't be set via MCP).

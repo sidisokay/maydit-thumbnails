@@ -5,6 +5,29 @@ ICP of **funded AI founders who want to look like the category leader**.
 
 > Framer edits live in the project and go live only after you click **Publish** in Framer.
 
+## Phase 11 — 2026-07-06 (PR #1) — Tribe-native content cluster (positioning-informed)
+
+Owner supplied the **Positioning Master** doc. Key strategic shift: the existing cluster targets
+generic "AI SaaS website design" terms, but the tribe searches in **its own confirmed native
+language** — which is both unclaimed keyword space *and* what makes traffic qualified. Distilled the
+doc into `seo/icp-positioning-brief.md` (tribe, enemy, native phrasing, triggers, offer ladder, avoid
+list) as the lens for all future content.
+
+Shipped **5 new blog posts** written from inside the tribe's 11pm thoughts, each funneling to
+`/services/ai-website-design` + cal.com and cross-linked to the existing AI cluster:
+- **why-your-ai-startup-looks-generic** — the enemy head-on ("we look like the 15th Claude clone")
+- **vibe-coded-website-vs-designed** — "I can tell it looks like I vibe-coded it"
+- **taste-is-the-moat-ai-startups** — the brand POV ("good enough isn't good enough in 2026")
+- **launch-ready-website-ai-startup** — the canonical trigger ("four weeks until we go live") + the wedge
+- **make-ai-startup-look-like-yc-company** — the aspiration ("million-dollar design team" look)
+
+Language is drawn from CONFIRMED tribe phrasing; deliberately avoids agency-speak/pitch language
+the tribe is allergic to. Blog count now ~85.
+
+Future: weave established pillar/category-leader posts → these 5 (round 2 authority routing);
+build the remaining trigger-driven topics listed in the brief (competitor-launch, pre-raise rebrand,
+Framer-vs-Webflow-for-launch, design-partner-vs-hire).
+
 ## Phase 10 — 2026-07-06 (PR #1) — Route existing authority into AI money pages
 
 Discovery: the site already has **80 blog posts** (a mature content engine) and **5

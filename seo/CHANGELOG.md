@@ -5,6 +5,16 @@ ICP of **funded AI founders who want to look like the category leader**.
 
 > Framer edits live in the project and go live only after you click **Publish** in Framer.
 
+## Phase 7 — 2026-07-06 (PR #1)
+
+### Live in the Framer project
+- **`/services/ai-product-design`** — AI-specific product/UI-UX design money page (the existing
+  product-design page is generic "tech companies"; this targets AI-product intent: trust patterns,
+  agentic UX, MVP/feature design). 4 service pages now: ai-website-design, design-retainer,
+  webflow-website, ai-product-design.
+- **Funnel extended to the product side:** `agentic-ux-design-guide` now links to
+  `/services/ai-product-design` in-body and in Related reading.
+
 ## Phase 6 — 2026-07-06 (PR #1)
 
 ### Live in the Framer project

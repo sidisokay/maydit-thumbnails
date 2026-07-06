@@ -5,6 +5,27 @@ ICP of **funded AI founders who want to look like the category leader**.
 
 > Framer edits live in the project and go live only after you click **Publish** in Framer.
 
+## Phase 5 — 2026-07-06 (PR #1)
+
+### Live in the Framer project — two commercial service landing pages
+Bottom-of-funnel money pages (higher lead intent than blog posts) filling real gaps in the
+`/services/:slug` collection (which had web-design, framer-website, product-design, ai-mvp-cleanup
+but nothing AI-specific or retainer-specific):
+- **`/services/ai-website-design`** — "Website design for AI companies that want to look like the
+  category leader." The dedicated commercial page for the core ICP term, with AI-specific services,
+  qualify list, real case studies (Dualite, SATHI) and 6 FAQs.
+- **`/services/design-retainer`** — "A monthly design retainer for AI and SaaS companies." The
+  retainer was sold on the homepage with no landing page; now it has a full commercial page with
+  pricing FAQs ($3k–$9k/mo) and case studies (Dualite, PixelFlow).
+
+Both reuse the proven web-design/product-design template structure and real project imagery, so
+they render correctly and match the site's design.
+
+### Owner follow-ups for the new service pages
+- Add nav / homepage-services links to `/services/ai-website-design` and `/services/design-retainer`
+  (the services section is a component the MCP can't edit) so they get internal links + are easy to find.
+- Set their SEO titles/descriptions in Framer (pattern is in `recommended-metadata.md`).
+
 ## Phase 4 — 2026-07-06 (PR #1)
 
 ### Live in the Framer project

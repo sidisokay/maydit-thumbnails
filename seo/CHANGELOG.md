@@ -5,6 +5,17 @@ ICP of **funded AI founders who want to look like the category leader**.
 
 > Framer edits live in the project and go live only after you click **Publish** in Framer.
 
+## Phase 8 — 2026-07-06 (PR #1)
+
+### Funnel complete
+All 8 new blog posts now link into a service money page (in-body + Related reading):
+- Website-intent posts → `/services/ai-website-design`
+- Pricing/agency posts → `/services/ai-website-design` + `/services/design-retainer`
+- Agentic-UX post → `/services/ai-product-design`
+Full path: homepage (schema) → blog cluster (8 interlinked posts) → 4 service pages
+(`ai-website-design`, `design-retainer`, `webflow-website`, `ai-product-design`) + `/agencies`
+commercial page → `/work` → book a call.
+
 ## Phase 7 — 2026-07-06 (PR #1)
 
 ### Live in the Framer project

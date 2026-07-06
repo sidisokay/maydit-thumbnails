@@ -5,6 +5,23 @@ ICP of **funded AI founders who want to look like the category leader**.
 
 > Framer edits live in the project and go live only after you click **Publish** in Framer.
 
+## Phase 6 — 2026-07-06 (PR #1)
+
+### Live in the Framer project
+- **`/services/webflow-website`** — new Webflow service page (parallels the existing Framer page;
+  covers "why Webflow over WordPress", migrations, and real case studies).
+- **`/agencies/best-design-agency-for-ai-startups`** — commercial roundup/"how to choose" page for
+  the "best design agency for AI startups" intent. Links into both service pages and the blog cluster.
+- **Funnel wired (blog → money pages):** the pillar (`ai-startup-website-design-guide`),
+  `design-agency-for-ai-startups`, and `ai-saas-website-design-cost` now link to
+  `/services/ai-website-design` and `/services/design-retainer` in-body and in Related reading, so
+  high-intent readers flow toward the pages that book calls.
+
+### Site map of what now interlinks
+Homepage (schema) → blog cluster (8 posts, cross-linked) → `/services/ai-website-design` +
+`/services/design-retainer` + `/services/webflow-website` → `/work`. The `/agencies` page and two
+established posts (`ai-product-ux-design-guide`, `ux-design-agency-for-tech-companies`) feed authority in.
+
 ## Phase 5 — 2026-07-06 (PR #1)
 
 ### Live in the Framer project — two commercial service landing pages

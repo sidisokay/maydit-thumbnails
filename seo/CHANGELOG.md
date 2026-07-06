@@ -5,6 +5,35 @@ ICP of **funded AI founders who want to look like the category leader**.
 
 > Framer edits live in the project and go live only after you click **Publish** in Framer.
 
+## Phase 10 — 2026-07-06 (PR #1) — Route existing authority into AI money pages
+
+Discovery: the site already has **80 blog posts** (a mature content engine) and **5
+finished "score-yourself-out-of-20 → book a call" lead tools** (Checklist collection)
+sitting in `draft` with nothing linking to them. Per direction, this phase routes link
+equity from established, already-indexed posts into the new AI service money pages
+(fastest ranking lever, no publishing needed). Added contextual in-body links (in the
+closing CTA, alongside the existing cal.com link) — and a Related-reading link where one
+existed — to:
+
+- **→ /services/ai-product-design**: `ai-product-ux-design-guide` (+Related reading),
+  `designing-for-ai-agents-ux`, `ai-saas-product-design-trends`
+- **→ /services/ai-website-design**: `saas-hero-section-design`,
+  `saas-landing-page-best-practices-2026`, `what-makes-a-good-saas-website`
+- **→ /services/design-retainer**: `web-design-retainer-for-tech-companies`
+
+Method: extracted each post's live HTML, inserted the link via scripted string-replace
+(no hand-editing of live content), verified, and re-pushed. Body copy otherwise unchanged.
+
+Future rounds (not yet done): migration posts → /services/webflow-website; more
+Product-Design posts (designing-for-ai-errors, ai-onboarding-ux, conversational-ui,
+generative-ui, ai-personalisation, ai-audit-interfaces) → /services/ai-product-design.
+
+### Open lead-gen opportunity (needs owner action)
+The 5 scorecard lead tools (onboarding, saas-landing-page, saas-homepage-audit,
+saas-case-study-page, ai-tool-landing-page) are built and wired to cal.com but are in
+`draft`. Publishing them + linking the matching posts into each is the single biggest
+lead lever available and is a one-toggle owner decision.
+
 ## Phase 9 — 2026-07-06 (PR #1) — Copy-length fix (responsiveness)
 
 The new service pages were wordier than the originals, so text overflowed the

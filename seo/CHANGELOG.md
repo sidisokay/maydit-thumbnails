@@ -5,6 +5,25 @@ ICP of **funded AI founders who want to look like the category leader**.
 
 > Framer edits live in the project and go live only after you click **Publish** in Framer.
 
+## Phase 9 — 2026-07-06 (PR #1) — Copy-length fix (responsiveness)
+
+The new service pages were wordier than the originals, so text overflowed the
+template's fixed-size containers (H1, hero line, section headings, qualify bullets,
+"Also included" chips, service-card paragraphs) — looking odd and breaking
+responsiveness. Measured every field against the max length used by the four
+original service pages (ai-mvp-cleanup, product-design, framer-website, web-design)
+and trimmed all new pages to within those limits:
+- **ai-website-design** (worst offender): H1 74→48, hero 140→98, section head 45→31,
+  two qualify bullets, two service paragraphs, one chip — all now within caps.
+- **design-retainer**: hero 141→116; five "Also included" chips rewritten from full
+  sentences (34–36 chars) to tag-style labels (~20–24) matching the originals.
+- **ai-product-design**: H1 57→43, section head 45→31, qualify bullet, two service
+  paragraphs — all within caps.
+- **webflow-website**: already within limits; unchanged.
+- **/agencies** page: card description 207 chars (shorter than existing 281-char
+  card); body is article-flow, no fixed container — unchanged.
+Verified: every fixed-container field on all new pages is now ≤ the originals' max.
+
 ## Phase 8 — 2026-07-06 (PR #1)
 
 ### Funnel complete

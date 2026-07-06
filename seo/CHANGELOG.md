@@ -35,9 +35,21 @@ each funneling to a service page + cal.com and cross-linked into the cluster:
 
 Tribe-native cluster now 8 posts total (Phases 11–12). Blog count ~88.
 
-## Phase 11 note (carried) — remaining roadmap
-Round-2 authority routing (established pillar/category-leader → new cluster) and further trigger topics
-(pre-raise rebrand, Framer-vs-Webflow-for-launch) still open.
+## Phase 13 — 2026-07-06 (PR #1) — Round-2 authority routing (hub → new cluster)
+
+Fed the new tribe-native cluster inbound links from the two established, already-indexed hub posts,
+so the new posts get discovered and inherit equity fast:
+- **ai-startup-website-design-guide** (pillar) → why-generic + launch-ready (top of Related reading)
+- **how-to-look-like-a-category-leader-ai-startup** → look-like-a-YC-company + linear-vercel-raycast
+  (top of Related reading); also added a `/services/ai-website-design` + cal.com CTA it was missing.
+
+Cluster is now a closed loop: hub posts → new tribe-native posts → each other → service money pages
+→ cal.com. Everything is live in Framer (published-state) and mirrored in `seo/`.
+
+### Still open (future turns)
+- Further trigger topics from the brief (pre-raise rebrand, Framer-vs-Webflow-for-launch,
+  Linear/Vercel/Raycast is done).
+- The 5 draft scorecard lead tools remain the top lead lever, pending owner publish.
 
 ## Phase 10 — 2026-07-06 (PR #1) — Route existing authority into AI money pages
 

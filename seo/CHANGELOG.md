@@ -5,6 +5,27 @@ ICP of **funded AI founders who want to look like the category leader**.
 
 > Framer edits live in the project and go live only after you click **Publish** in Framer.
 
+## Phase 4 — 2026-07-06 (PR #1)
+
+### Live in the Framer project
+- **Enriched homepage structured data** (`StructuredDataHome`, code file `heEHi2i`): added an
+  `OfferCatalog` with the three services as priced `Offer`s (website $8k–$25k, retainer
+  $3k–$9k/mo), `priceRange` on the business entity, and `offers` on each `Service`. This gives
+  AI answer engines explicit pricing to cite for "how much does an AI website cost" style
+  queries — exactly what the ICP asks AI tools. Repo copy updated for parity.
+
+### Data point (Ahrefs)
+- Domain Rating = **32** (free endpoint). The connected Ahrefs plan gates Site Explorer,
+  Keywords Explorer, and GSC ("Insufficient plan"), so live keyword/traffic pulls aren't
+  available here — use Google Search Console directly for query data. DR 32 confirms the
+  strategy: long-tail commercial + AEO/GEO is winnable now; high-volume head terms are not yet.
+
+### Owner fix — add a homepage `<h1>` (2 min, Framer UI)
+The homepage currently has **no `<h1>`** (only an H2 + three H4s). The MCP can't set it safely
+because the hero uses a Framer-bundled font the style API can't reference. In Framer: select the
+statement "Design for AI companies that want to look like category leaders", and set its text
+style's **Tag to H1** (keep the size/alignment as-is). Zero visual change, adds the missing H1.
+
 ## Phase 3 — 2026-07-06 (PR #1)
 
 ### Live in the Framer project

@@ -3,9 +3,9 @@
 // the homepage (instance PRdHljgvF). This file is the version-controlled copy.
 //
 // Renders JSON-LD structured data (schema.org) for the homepage:
-//   1. Organization / ProfessionalService (the brand entity)
+//   1. Organization / ProfessionalService (brand entity, priceRange, hasOfferCatalog)
 //   2. WebSite (with SearchAction)
-//   3. Service list (what the studio sells)
+//   3. Service list (what the studio sells, with priced Offers)
 //   4. FAQPage (high-intent questions AI founders actually ask)
 // Framer statically renders this into the published HTML, so the JSON-LD is
 // crawlable without JS — the core AEO/GEO signal. Zero visual footprint.
@@ -23,6 +23,7 @@ type Props = {
     description: string
     city: string
     country: string
+    priceRange: string
     sameAs: string
     faqs: FaqItem[]
 }
@@ -37,11 +38,35 @@ const DEFAULT_FAQS: FaqItem[] = [
     { q: "Can you design our product, not just the marketing website?", a: "Yes. After the website lands we work inside your product — flows, dashboards, empty and error states, onboarding — so the experience holds up once users are inside, not just on the landing page." },
 ]
 
+const SERVICES = [
+    { name: "Website Design & Development for AI Companies", desc: "Launch-ready marketing sites designed and built in Framer or Webflow for funded AI startups.", min: 8000, max: 25000, unit: null as string | null },
+    { name: "Web & Mobile App Product Design", desc: "UI/UX design for AI SaaS products — flows, dashboards, onboarding and edge-case states.", min: null as number | null, max: null as number | null, unit: null as string | null },
+    { name: "Monthly Design Retainer", desc: "Ongoing senior product and web design for AI teams, without hiring in-house.", min: 3000, max: 9000, unit: "MON" },
+]
+
+function priceSpec(s: (typeof SERVICES)[number]) {
+    if (s.min == null || s.max == null) return undefined
+    const spec: any = { "@type": "PriceSpecification", priceCurrency: "USD", minPrice: s.min, maxPrice: s.max }
+    if (s.unit) spec.unitText = s.unit
+    return spec
+}
+
 function graph(props: Props) {
-    const { orgName, url, logo, image, email, description, city, country, sameAs, faqs } = props
+    const { orgName, url, logo, image, email, description, city, country, priceRange, sameAs, faqs } = props
     const base = url.replace(/\/$/, "")
     const social = (sameAs || "").split(/[\n,]+/).map((s) => s.trim()).filter(Boolean)
     const items = faqs && faqs.length ? faqs : DEFAULT_FAQS
+
+    const offerCatalog = {
+        "@type": "OfferCatalog",
+        name: "Design services for AI companies",
+        itemListElement: SERVICES.map((s) => {
+            const offer: any = { "@type": "Offer", name: s.name, description: s.desc, category: "Design services", itemOffered: { "@type": "Service", name: s.name } }
+            const ps = priceSpec(s)
+            if (ps) offer.priceSpecification = ps
+            return offer
+        }),
+    }
 
     const org = {
         "@type": ["Organization", "ProfessionalService"],
@@ -53,13 +78,16 @@ function graph(props: Props) {
         email,
         logo: { "@type": "ImageObject", url: logo },
         image,
+        priceRange,
         slogan: "Design for AI companies that want to look like category leaders",
         knowsAbout: ["UI/UX design", "Website design", "Product design", "AI product design", "SaaS design", "Framer development", "Webflow development", "Design retainer"],
         areaServed: { "@type": "Place", name: "Worldwide" },
         address: { "@type": "PostalAddress", addressLocality: city, addressCountry: country },
         contactPoint: { "@type": "ContactPoint", email, contactType: "sales", areaServed: "Worldwide", availableLanguage: "English" },
+        hasOfferCatalog: offerCatalog,
         sameAs: social,
     }
+
     const website = {
         "@type": "WebSite",
         "@id": base + "/#website",
@@ -70,25 +98,28 @@ function graph(props: Props) {
         inLanguage: "en",
         potentialAction: { "@type": "SearchAction", target: { "@type": "EntryPoint", urlTemplate: base + "/blog?q={search_term_string}" }, "query-input": "required name=search_term_string" },
     }
-    const serviceNames = [
-        { name: "Website Design & Development for AI Companies", desc: "Launch-ready marketing sites designed and built in Framer or Webflow for funded AI startups." },
-        { name: "Web & Mobile App Product Design", desc: "UI/UX design for AI SaaS products — flows, dashboards, onboarding and edge-case states." },
-        { name: "Monthly Design Retainer", desc: "Ongoing senior product and web design for AI teams, without hiring in-house." },
-    ]
-    const services = serviceNames.map((s) => ({
-        "@type": "Service",
-        name: s.name,
-        description: s.desc,
-        serviceType: s.name,
-        provider: { "@id": base + "/#organization" },
-        areaServed: { "@type": "Place", name: "Worldwide" },
-        audience: { "@type": "Audience", audienceType: "AI founders and funded SaaS teams" },
-    }))
+
+    const services = SERVICES.map((s) => {
+        const svc: any = {
+            "@type": "Service",
+            name: s.name,
+            description: s.desc,
+            serviceType: s.name,
+            provider: { "@id": base + "/#organization" },
+            areaServed: { "@type": "Place", name: "Worldwide" },
+            audience: { "@type": "Audience", audienceType: "AI founders and funded SaaS teams" },
+        }
+        const ps = priceSpec(s)
+        if (ps) svc.offers = { "@type": "Offer", priceSpecification: ps }
+        return svc
+    })
+
     const faqPage = {
         "@type": "FAQPage",
         "@id": base + "/#faq",
         mainEntity: items.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
     }
+
     return { "@context": "https://schema.org", "@graph": [org, website, ...services, faqPage] }
 }
 
@@ -110,6 +141,7 @@ StructuredDataHome.defaultProps = {
     description: "Studio Maydit is a design studio for funded AI companies. We design and build websites and product UI/UX so early-stage AI startups look like the category leader.",
     city: "Hyderabad",
     country: "IN",
+    priceRange: "$8,000–$25,000",
     sameAs: "https://www.linkedin.com/company/studio-maydit\nhttps://www.instagram.com/studiomaydit/\nhttps://www.framer.com/@studio-maydit/\nhttps://clutch.co/profile/studio-maydit",
     faqs: DEFAULT_FAQS,
 }
@@ -123,6 +155,7 @@ addPropertyControls(StructuredDataHome, {
     description: { type: ControlType.String, title: "Description", displayTextArea: true },
     city: { type: ControlType.String, title: "City" },
     country: { type: ControlType.String, title: "Country (ISO)" },
+    priceRange: { type: ControlType.String, title: "Price Range" },
     sameAs: { type: ControlType.String, title: "Social URLs", displayTextArea: true },
     faqs: {
         type: ControlType.Array,

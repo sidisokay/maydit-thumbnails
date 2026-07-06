@@ -47,9 +47,24 @@ Cluster is now a closed loop: hub posts → new tribe-native posts → each othe
 → cal.com. Everything is live in Framer (published-state) and mirrored in `seo/`.
 
 ### Still open (future turns)
-- Further trigger topics from the brief (pre-raise rebrand, Framer-vs-Webflow-for-launch,
-  Linear/Vercel/Raycast is done).
-- The 5 draft scorecard lead tools remain the top lead lever, pending owner publish.
+- Further trigger topics from the brief (pre-raise rebrand, Framer-vs-Webflow-for-launch).
+
+## Phase 14 — 2026-07-06 (PR #1) — Scorecard lead tools wired + indexing pack
+
+Owner **published all 5 scorecard tools** (route: `/checklist-2/:slug`). Wired the best-matched
+posts into each with a free "score yourself out of 20" soft-CTA (lower-commitment than "book a call"):
+- **ai-saas-landing-page-design** → `/checklist-2/ai-tool-landing-page`
+- **what-makes-a-good-saas-website** → `/checklist-2/saas-homepage-audit`
+- **saas-landing-page-best-practices-2026** → `/checklist-2/saas-landing-page`
+- **saas-onboarding-ux-guide** → `/checklist-2/onboarding`
+- (saas-case-study-page tool live; no strong single post match yet — wire from a proof/case-study
+  post in a future pass.)
+
+Also created `seo/indexing-request.md` — full priority URL list + GSC instructions for the owner to
+submit the sitemap and request indexing (the crawl/index step is the remaining gate on the traffic goal).
+
+Confirmed live Framer routes via getProjectXml: `/services/:slug`, `/agencies/:slug`,
+`/blog/:slug`, `/checklist-2/:slug`, `/resources/:slug`.
 
 ## Phase 10 — 2026-07-06 (PR #1) — Route existing authority into AI money pages
 

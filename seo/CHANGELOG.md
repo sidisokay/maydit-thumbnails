@@ -42,10 +42,13 @@ The Framer MCP cannot edit CMS collection templates, so this one placement is ma
 - `seo/SEO-AUDIT-2026-07.md`, `seo/recommended-metadata.md`,
   `seo/StructuredDataHome.tsx`, `seo/StructuredDataArticle.tsx`.
 
-### Prepared, not yet applied (Framer went read-only mid-session)
-- **Internal linking** to form the topic cluster (pillar + supporting). Ready-to-paste
-  blocks are in `seo/internal-linking-plan.md`. Re-enable edit access in Framer (open the
-  project as editor with the MCP plugin running) and I can apply these automatically.
+### Internal linking — APPLIED ✅ (after edit access was restored)
+- All 5 new posts now carry a **"Related reading"** block, forming the topic cluster:
+  `ai-startup-website-design-guide` (pillar) links down to the other four; each supporting
+  post links up to the pillar and to a sibling; the two hiring/pricing posts also link to
+  `/work`. Reference blocks remain in `seo/internal-linking-plan.md`.
+- Note: updating a post via the API re-validates the `Category` enum, so updates must
+  resend `Category` as its case **ID** (`W5XP7wrYY`), not the display name.
 
 ## Still owner-only (highest remaining impact)
 1. **Publish** the Framer project so all of the above goes live.

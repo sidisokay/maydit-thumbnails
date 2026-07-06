@@ -24,9 +24,20 @@ Shipped **5 new blog posts** written from inside the tribe's 11pm thoughts, each
 Language is drawn from CONFIRMED tribe phrasing; deliberately avoids agency-speak/pitch language
 the tribe is allergic to. Blog count now ~85.
 
-Future: weave established pillar/category-leader posts → these 5 (round 2 authority routing);
-build the remaining trigger-driven topics listed in the brief (competitor-launch, pre-raise rebrand,
-Framer-vs-Webflow-for-launch, design-partner-vs-hire).
+## Phase 12 — 2026-07-06 (PR #1) — Tribe-native cluster, batch 2 (3 posts)
+
+Three more on-tribe, trigger-driven posts from the brief roadmap (distinct intent, no cannibalization),
+each funneling to a service page + cal.com and cross-linked into the cluster:
+- **competitor-launch-looked-better** — the competitor-viral trigger → /services/ai-website-design
+- **design-partner-vs-hiring-designer** — buying-model decision ("hiring is too difficult"),
+  feeds the retainer → /services/design-retainer + /services/ai-product-design
+- **linear-vercel-raycast-aesthetic** — the tribe's aspiration north stars → /services/ai-website-design
+
+Tribe-native cluster now 8 posts total (Phases 11–12). Blog count ~88.
+
+## Phase 11 note (carried) — remaining roadmap
+Round-2 authority routing (established pillar/category-leader → new cluster) and further trigger topics
+(pre-raise rebrand, Framer-vs-Webflow-for-launch) still open.
 
 ## Phase 10 — 2026-07-06 (PR #1) — Route existing authority into AI money pages
 

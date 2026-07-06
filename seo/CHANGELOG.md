@@ -5,7 +5,29 @@ ICP of **funded AI founders who want to look like the category leader**.
 
 > Framer edits live in the project and go live only after you click **Publish** in Framer.
 
-## Phase 2 — 2026-07-05 (this update, PR #1)
+## Phase 3 — 2026-07-06 (PR #1)
+
+### Live in the Framer project
+- **3 more AI-commercial posts published** (8 total this engagement), each with FAQs and
+  cluster internal links baked in:
+  - `/blog/ai-saas-landing-page-design` — "AI SaaS Landing Page Design: Best Practices That Convert"
+    (conversion / landing-page intent)
+  - `/blog/website-design-after-raising-seed-series-a` — "Website Design After Raising a Seed or
+    Series A" (captures funded founders at the exact moment they invest in design)
+  - `/blog/agentic-ux-design-guide` — "Agentic UX: How to Design Interfaces for AI Agents"
+    (product-design intent; links into the existing AI-UX cluster)
+- **Authority links added** from two existing high-traffic posts into the new commercial cluster,
+  passing ranking power toward pages that convert:
+  - `ai-product-ux-design-guide` → agentic-ux, pillar, category-leader
+  - `ux-design-agency-for-tech-companies` → design-agency-for-ai-startups, pillar, /work
+
+### Not changed (documented)
+- **Homepage visible FAQ**: rendered by an opaque `FaqAccordion` code component whose items
+  aren't editable via MCP. The homepage FAQ **schema** (accurate, category-leader Q&As) still
+  ships via `StructuredDataHome` and benefits AEO/GEO. To also earn Google FAQ rich results,
+  align the visible homepage FAQ text to those questions in the Framer UI.
+
+## Phase 2 — 2026-07-05 (PR #1)
 
 ### Live in the Framer project
 - **3 more AI-commercial blog posts published** (5 total this engagement), filling the
@@ -57,11 +79,17 @@ The Framer MCP cannot edit CMS collection templates, so this one placement is ma
 4. Ensure **one semantic `<h1>`** per page (hero headline is an animated SVG).
 5. **Google Search Console:** submit `sitemap.xml`, request indexing for the 5 new posts.
 
-## New posts index (this engagement)
+## New posts index (this engagement — 8 posts)
 | Slug | Intent |
 |---|---|
+| ai-startup-website-design-guide | **Pillar** / head term |
 | how-to-look-like-a-category-leader-ai-startup | Bottom-funnel, brand/positioning |
 | design-agency-for-ai-startups | Commercial — hiring intent |
 | ai-saas-website-design-cost | Commercial — pricing intent |
-| ai-startup-website-design-guide | Pillar / head term |
 | branding-for-ai-startups | Mid-funnel — branding |
+| ai-saas-landing-page-design | Conversion — landing pages |
+| website-design-after-raising-seed-series-a | Commercial — post-raise trigger |
+| agentic-ux-design-guide | Product design — agentic UX |
+
+All eight are internally linked as a cluster around the pillar; two established posts
+(`ai-product-ux-design-guide`, `ux-design-agency-for-tech-companies`) now link in as well.
